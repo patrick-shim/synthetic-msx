@@ -1,0 +1,245 @@
+Op Code,Instruction,Description
+00,NOP,No Operation
+01,XL,Load Accumulator with Low Byte of Immediate Address
+02,XA,Load Accumulator with High Byte of Immediate Address
+03,INI,Increment Index Register (IX)
+04,INR B,Increment Byte B
+05,DAI,Decimal Adjust Accumulator
+06,"LD B, n",Load Byte B with Immediate Value
+07,RLCA,Rotate Left through Carry (Accumulator)
+08,"EX AF, AF'",Exchange Registers A and F with Alternate Set A and F
+09,"ADD HL, BC",Add Register Pair BC to Register Pair HL
+0A,"LD A, (BC)",Load Accumulator with Value from Memory Address BC
+0B,DEC C,Decrement Byte C
+0C,INR D,Increment Byte D
+0D,"LD D, n",Load Byte D with Immediate Value
+0E,RLA,Rotate Left through Carry (Accumulator)
+0F,RRCA,Rotate Right through Carry (Accumulator)
+10,DAA,Decimal Adjust Accumulator
+11,CPL,Complement Accumulator
+12,"LD A, DE",Load Accumulator with Register Pair DE
+13,INC H,Increment Byte H
+14,INR L,Increment Byte L
+15,"LD L, n",Load Byte L with Immediate Value
+16,"ADC A, n",Add Immediate Value to Accumulator (with Carry)
+17,RRC A,Rotate Right through Carry (Accumulator)
+18,"EX AF, AF'",Exchange Registers A and F with Alternate Set A and F
+19,"ADD HL, DE",Add Register Pair DE to Register Pair HL
+20,JR n,Jump Relative (with Sign Bit)
+21,"LD HL, BC",Load Register Pair HL with Register Pair BC
+22,LDI,Load Index Register (IX) with Low Byte of Immediate Address
+23,CPI,Compare Accumulator with Immediate Value
+24,INR B',Increment Alternate Byte B
+25,"LD A, I",Load Accumulator with Index Register (IY)
+26,ANI n,AND Immediate Value with Accumulator
+27,RLC A,Rotate Left through Carry (Accumulator)
+28,"EX AF, AF'",Exchange Registers A and F with Alternate Set A and F
+29,"ADD HL, SP",Add Stack Pointer to Register Pair HL
+30,JR n,Jump Relative (with Sign Bit)
+31,"LD SP, HL",Load Stack Pointer with Register Pair HL
+32,LDD,Load Index Register (IX) with High Byte of Immediate Address
+33,CPI,Compare Accumulator with Immediate Value
+34,INC B',Increment Alternate Byte B
+35,"LD A, IY+",Load Accumulator with Index Register (IY) plus Displacement
+36,ORI n,OR Immediate Value with Accumulator
+37,RRC A,Rotate Right through Carry (Accumulator)
+38,"EX AF, AF'",Exchange Registers A and F with Alternate Set A and F
+39,"ADD HL, BC'",Add Register Pair BC to Register Pair HL
+3A,Instruction 3A,Description for opcode 3A
+3B,Instruction 3B,Description for opcode 3B
+3C,Instruction 3C,Description for opcode 3C
+3D,Instruction 3D,Description for opcode 3D
+3E,Instruction 3E,Description for opcode 3E
+3F,Instruction 3F,Description for opcode 3F
+40,Instruction 40,Description for opcode 40
+41,Instruction 41,Description for opcode 41
+42,Instruction 42,Description for opcode 42
+43,Instruction 43,Description for opcode 43
+44,Instruction 44,Description for opcode 44
+45,Instruction 45,Description for opcode 45
+46,Instruction 46,Description for opcode 46
+47,Instruction 47,Description for opcode 47
+48,Instruction 48,Description for opcode 48
+49,Instruction 49,Description for opcode 49
+4A,Instruction 4A,Description for opcode 4A
+4B,Instruction 4B,Description for opcode 4B
+4C,Instruction 4C,Description for opcode 4C
+4D,Instruction 4D,Description for opcode 4D
+4E,Instruction 4E,Description for opcode 4E
+4F,Instruction 4F,Description for opcode 4F
+50,Instruction 50,Description for opcode 50
+51,Instruction 51,Description for opcode 51
+52,Instruction 52,Description for opcode 52
+53,Instruction 53,Description for opcode 53
+54,Instruction 54,Description for opcode 54
+55,Instruction 55,Description for opcode 55
+56,Instruction 56,Description for opcode 56
+57,Instruction 57,Description for opcode 57
+58,Instruction 58,Description for opcode 58
+59,Instruction 59,Description for opcode 59
+5A,Instruction 5A,Description for opcode 5A
+5B,Instruction 5B,Description for opcode 5B
+5C,Instruction 5C,Description for opcode 5C
+5D,Instruction 5D,Description for opcode 5D
+5E,Instruction 5E,Description for opcode 5E
+5F,Instruction 5F,Description for opcode 5F
+60,Instruction 60,Description for opcode 60
+61,Instruction 61,Description for opcode 61
+62,Instruction 62,Description for opcode 62
+63,Instruction 63,Description for opcode 63
+64,Instruction 64,Description for opcode 64
+65,Instruction 65,Description for opcode 65
+66,Instruction 66,Description for opcode 66
+67,Instruction 67,Description for opcode 67
+68,Instruction 68,Description for opcode 68
+69,Instruction 69,Description for opcode 69
+6A,Instruction 6A,Description for opcode 6A
+6B,Instruction 6B,Description for opcode 6B
+6C,Instruction 6C,Description for opcode 6C
+6D,Instruction 6D,Description for opcode 6D
+6E,Instruction 6E,Description for opcode 6E
+6F,Instruction 6F,Description for opcode 6F
+70,Instruction 70,Description for opcode 70
+71,Instruction 71,Description for opcode 71
+72,Instruction 72,Description for opcode 72
+73,Instruction 73,Description for opcode 73
+74,Instruction 74,Description for opcode 74
+75,Instruction 75,Description for opcode 75
+76,Instruction 76,Description for opcode 76
+77,Instruction 77,Description for opcode 77
+78,Instruction 78,Description for opcode 78
+79,Instruction 79,Description for opcode 79
+7A,Instruction 7A,Description for opcode 7A
+7B,Instruction 7B,Description for opcode 7B
+7C,Instruction 7C,Description for opcode 7C
+7D,Instruction 7D,Description for opcode 7D
+7E,Instruction 7E,Description for opcode 7E
+7F,Instruction 7F,Description for opcode 7F
+80,Instruction 80,Description for opcode 80
+81,Instruction 81,Description for opcode 81
+82,Instruction 82,Description for opcode 82
+83,Instruction 83,Description for opcode 83
+84,Instruction 84,Description for opcode 84
+85,Instruction 85,Description for opcode 85
+86,Instruction 86,Description for opcode 86
+87,Instruction 87,Description for opcode 87
+88,Instruction 88,Description for opcode 88
+89,Instruction 89,Description for opcode 89
+8A,Instruction 8A,Description for opcode 8A
+8B,Instruction 8B,Description for opcode 8B
+8C,Instruction 8C,Description for opcode 8C
+8D,Instruction 8D,Description for opcode 8D
+8E,Instruction 8E,Description for opcode 8E
+8F,Instruction 8F,Description for opcode 8F
+90,Instruction 90,Description for opcode 90
+91,Instruction 91,Description for opcode 91
+92,Instruction 92,Description for opcode 92
+93,Instruction 93,Description for opcode 93
+94,Instruction 94,Description for opcode 94
+95,Instruction 95,Description for opcode 95
+96,Instruction 96,Description for opcode 96
+97,Instruction 97,Description for opcode 97
+98,Instruction 98,Description for opcode 98
+99,Instruction 99,Description for opcode 99
+9A,Instruction 9A,Description for opcode 9A
+9B,Instruction 9B,Description for opcode 9B
+9C,Instruction 9C,Description for opcode 9C
+9D,Instruction 9D,Description for opcode 9D
+9E,Instruction 9E,Description for opcode 9E
+9F,Instruction 9F,Description for opcode 9F
+A0,Instruction A0,Description for opcode A0
+A1,Instruction A1,Description for opcode A1
+A2,Instruction A2,Description for opcode A2
+A3,Instruction A3,Description for opcode A3
+A4,Instruction A4,Description for opcode A4
+A5,Instruction A5,Description for opcode A5
+A6,Instruction A6,Description for opcode A6
+A7,Instruction A7,Description for opcode A7
+A8,Instruction A8,Description for opcode A8
+A9,Instruction A9,Description for opcode A9
+AA,Instruction AA,Description for opcode AA
+AB,Instruction AB,Description for opcode AB
+AC,Instruction AC,Description for opcode AC
+AD,Instruction AD,Description for opcode AD
+AE,Instruction AE,Description for opcode AE
+AF,Instruction AF,Description for opcode AF
+B0,Instruction B0,Description for opcode B0
+B1,Instruction B1,Description for opcode B1
+B2,Instruction B2,Description for opcode B2
+B3,Instruction B3,Description for opcode B3
+B4,Instruction B4,Description for opcode B4
+B5,Instruction B5,Description for opcode B5
+B6,Instruction B6,Description for opcode B6
+B7,Instruction B7,Description for opcode B7
+B8,Instruction B8,Description for opcode B8
+B9,Instruction B9,Description for opcode B9
+BA,Instruction BA,Description for opcode BA
+BB,Instruction BB,Description for opcode BB
+BC,Instruction BC,Description for opcode BC
+BD,Instruction BD,Description for opcode BD
+BE,Instruction BE,Description for opcode BE
+BF,Instruction BF,Description for opcode BF
+C0,Instruction C0,Description for opcode C0
+C1,Instruction C1,Description for opcode C1
+C2,Instruction C2,Description for opcode C2
+C3,Instruction C3,Description for opcode C3
+C4,Instruction C4,Description for opcode C4
+C5,Instruction C5,Description for opcode C5
+C6,Instruction C6,Description for opcode C6
+C7,Instruction C7,Description for opcode C7
+C8,Instruction C8,Description for opcode C8
+C9,Instruction C9,Description for opcode C9
+CA,Instruction CA,Description for opcode CA
+CB,Instruction CB,Description for opcode CB
+CC,Instruction CC,Description for opcode CC
+CD,Instruction CD,Description for opcode CD
+CE,Instruction CE,Description for opcode CE
+CF,Instruction CF,Description for opcode CF
+D0,Instruction D0,Description for opcode D0
+D1,Instruction D1,Description for opcode D1
+D2,Instruction D2,Description for opcode D2
+D3,Instruction D3,Description for opcode D3
+D4,Instruction D4,Description for opcode D4
+D5,Instruction D5,Description for opcode D5
+D6,Instruction D6,Description for opcode D6
+D7,Instruction D7,Description for opcode D7
+D8,Instruction D8,Description for opcode D8
+D9,Instruction D9,Description for opcode D9
+DA,Instruction DA,Description for opcode DA
+DB,Instruction DB,Description for opcode DB
+DC,Instruction DC,Description for opcode DC
+DD,Instruction DD,Description for opcode DD
+DE,Instruction DE,Description for opcode DE
+DF,Instruction DF,Description for opcode DF
+E0,Instruction E0,Description for opcode E0
+E1,Instruction E1,Description for opcode E1
+E2,Instruction E2,Description for opcode E2
+E3,Instruction E3,Description for opcode E3
+E4,Instruction E4,Description for opcode E4
+E5,Instruction E5,Description for opcode E5
+E6,Instruction E6,Description for opcode E6
+E7,Instruction E7,Description for opcode E7
+E8,Instruction E8,Description for opcode E8
+E9,Instruction E9,Description for opcode E9
+EA,Instruction EA,Description for opcode EA
+EB,Instruction EB,Description for opcode EB
+EC,Instruction EC,Description for opcode EC
+ED,Instruction ED,Description for opcode ED
+EE,Instruction EE,Description for opcode EE
+EF,Instruction EF,Description for opcode EF
+F0,Instruction F0,Description for opcode F0
+F1,Instruction F1,Description for opcode F1
+F2,Instruction F2,Description for opcode F2
+F3,Instruction F3,Description for opcode F3
+F4,Instruction F4,Description for opcode F4
+F5,Instruction F5,Description for opcode F5
+F6,Instruction F6,Description for opcode F6
+F7,Instruction F7,Description for opcode F7
+F8,Instruction F8,Description for opcode F8
+F9,Instruction F9,Description for opcode F9
+FA,Instruction FA,Description for opcode FA
+FB,Instruction FB,Description for opcode FB
+FC,Instruction FC,Description for opcode FC
+FD,Instruction FD,Description for opcode FD
+FE,Instruction FE,Description for opcode FE
+FF,Instruction FF,Description for opcode FF
